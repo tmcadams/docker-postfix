@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build https://github.com/tmcadams222/docker-postfix .
+docker build tmcadams222/tmcadams:docker-postfix .
