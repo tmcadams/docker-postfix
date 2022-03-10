@@ -27,4 +27,6 @@ tail -f /var/log/mail.log
 EOF
 chmod +x /opt/postfix.sh
 postconf -e myhostname=$maildomain
+postconf -e mynetworks = $mynetworks
+postconf -e smtpd_recipient_restrictions=permit_mynetworks
 postconf -F '*/*/chroot = n'
