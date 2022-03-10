@@ -1,7 +1,7 @@
 docker-postfix
 ==============
 
-Simple postfix with smtp authentication (sasldb) in a docker container to act as a relay to Office 365.
+Simple postfix in a docker container to act as a relay to Office 365.
 
 ## Requirement
 + Docker 1.0
@@ -18,11 +18,9 @@ Simple postfix with smtp authentication (sasldb) in a docker container to act as
 
 	```bash
 	$ sudo docker run -p 25:25 \
-			-e maildomain=mail.example.com -e smtp_user=user:pwd \
+			-e maildomain=mail.example.com \
 			--name postfix -d tmcadams222/postfix
-	# Set multiple user credentials: -e smtp_user=user1:pwd1,user2:pwd2,...,userN:pwdN
 	```
 
 ## Reference
 + TBD
-+ 
