@@ -2,7 +2,7 @@ From ubuntu:trusty
 MAINTAINER Travis McAdams
 
 # Set noninteractive mode for apt-get
-# ENV DEBIAN_FRONTEND noninteractive
+ENV DEBIAN_FRONTEND noninteractive
 
 # Update
 RUN apt-get update
