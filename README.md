@@ -19,6 +19,7 @@ Simple postfix in a docker container to act as a relay to Office 365.
 	```bash
 	$ sudo docker run -p 25:25 \
 			-e maildomain=mail.example.com \
+			-e mynetworks="172.0.0.0/24, 192.168.1.0/24" \
 			--name postfix -d tmcadams222/postfix
 	```
 
