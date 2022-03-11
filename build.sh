@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build tmcadams222/tmcadams:docker-postfix .
+docker build tmcadams222/tmcadams:latest
