@@ -1,7 +1,7 @@
 docker-postfix
 ==============
 
-Simple postfix in a docker container to act as a relay to Office 365.
+Simple postfix in a docker container to act as a relay to another host
 
 ## Requirement
 + Docker 1.0
